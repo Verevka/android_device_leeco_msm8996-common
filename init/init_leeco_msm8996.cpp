@@ -135,6 +135,16 @@ void vendor_load_properties() {
         {
             isLEX720 = 1;
         }
+
+        if (!strncmp(device, "le_ares_oversea", 14))
+        {
+            isLEX727 = 1;
+        }
+        else if (!strncmp(device, "le_ares", 6))
+        {
+            isLEX720 = 1;
+        }
+
         else if (!strncmp(device, "le_x2_na_oversea", 16))
         {
             isLEX829 = 1;
